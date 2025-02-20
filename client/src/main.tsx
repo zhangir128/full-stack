@@ -11,6 +11,7 @@ import Home from "./routes/Home";
 import Write from "./routes/Write";
 import MainLayout from "./layouts/MainLayout";
 import Postlist from "./routes/PostList";
+import Main from "./routes/Main";
 
 // Define routes with `createBrowserRouter`
 const router = createBrowserRouter([
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: "/",
+        path: "/", // This keeps Main separate
+        element: <Main />,
+      },
+      {
+        path: "/home",
         element: <Home />,
       },
       {

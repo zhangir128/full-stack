@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import MainCategories from "../components/MainCategories";
 import FeaturedPosts from "../components/FeaturedPosts";
 import RecentList from "../components/RecentList";
@@ -6,12 +5,6 @@ import RecentList from "../components/RecentList";
 const Home: React.FC = () => {
   return (
     <div className="mt-4 flex flex-col gap-4">
-      {/*BreadCrumb */}
-      <div className="flex gap-4">
-        <Link to="/">Home</Link>
-        <span>•</span>
-        <span className="text-blue-800">Blogs and Articles</span>
-      </div>
       {/*Introduction */}
       <div className="flex items-center justify-between">
         {/*titles */}
